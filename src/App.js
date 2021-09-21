@@ -1,25 +1,20 @@
-import logo from './logo.svg';
+
 import './App.css';
+import Cardproduct from './componant/Cardproduct/Cardproduct';
+import Fetchproduct from './componant/Fetchproduct/Fetchproduct';
+import Navbar from './componant/Navbar/Navbar';
+import Searchbox from './componant/Searchbox/Searchbox';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Navbar></Navbar>
+      <Searchbox></Searchbox>
+      <Fetchproduct></Fetchproduct>
+      <Cardproduct></Cardproduct>
     </div>
   );
 }
+
 
 export default App;
